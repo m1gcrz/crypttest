@@ -1,18 +1,8 @@
-name: test decryption
-
-on:
-  push:
-    branches: ["*"]
-    # paths: 
-    # - 'Actions/diagram/*'
-
+# .github/workflows/smoke.yml
+name: smoke
+on: push
 jobs:
-  checkdeccrypt:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: checking in
-        uses: actions/checkout@v4
-      - name: 'shit to do'
-        run: | 
-          ls
-          cat init.md
+      - run: echo "Actions are working"
